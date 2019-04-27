@@ -5,9 +5,6 @@ alias dcl="gcloud dataproc clusters list"
 alias dcs="gcloud dataproc clusters describe"
 alias dcu="gcloud dataproc clusters update"
 
-#export GCLOUD_ZONE="us-east1-c"
-#export CLOUDSDK_PYTHON="$PYTHON2_HOME"/bin/python
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /Users/ryan/google-cloud-sdk/path.bash.inc ]; then
   source '/Users/ryan/google-cloud-sdk/path.bash.inc'
