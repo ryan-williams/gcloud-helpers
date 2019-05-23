@@ -14,3 +14,11 @@ fi
 if [ -f /Users/ryan/google-cloud-sdk/completion.bash.inc ]; then
   source '/Users/ryan/google-cloud-sdk/completion.bash.inc'
 fi
+
+alias gcppi="gcloud projects get-iam-policy"
+alias gcpcgc="gcloud container clusters get-credentials"
+alias gcplr="gcloud beta iam roles list"
+
+# gcloud functions deploy <name> --runtime python37 --trigger-resource ${TRIGGER_BUCKET} --trigger-event google.storage.object.finalize
+
+# gcloud projects add-iam-policy-binding $PROJECT --member serviceAccount:$SVCACCT --role roles/$ROLE
