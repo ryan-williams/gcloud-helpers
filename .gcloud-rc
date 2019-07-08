@@ -22,3 +22,8 @@ alias gcplr="gcloud beta iam roles list"
 # gcloud functions deploy <name> --runtime python37 --trigger-resource ${TRIGGER_BUCKET} --trigger-event google.storage.object.finalize
 
 # gcloud projects add-iam-policy-binding $PROJECT --member serviceAccount:$SVCACCT --role roles/$ROLE
+
+export CLOUDSDK_PYTHON="$(which -a python2 | grep -v pyenv | head -n 1)"
+if [ "$CLOUDSDK_PYTHON" = "" ]; then
+  echo "No python2 found" >&2
+fi
