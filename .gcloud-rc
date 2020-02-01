@@ -6,13 +6,13 @@ alias dcs="gcloud dataproc clusters describe"
 alias dcu="gcloud dataproc clusters update"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/ryan/google-cloud-sdk/path.bash.inc ]; then
-  source '/Users/ryan/google-cloud-sdk/path.bash.inc'
+if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then
+  source "$HOME/google-cloud-sdk/path.bash.inc"
 fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/ryan/google-cloud-sdk/completion.bash.inc ]; then
-  source '/Users/ryan/google-cloud-sdk/completion.bash.inc'
+if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then
+  source "$HOME/google-cloud-sdk/completion.bash.inc"
 fi
 
 alias gcppi="gcloud projects get-iam-policy"
